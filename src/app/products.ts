@@ -18,5 +18,27 @@ export const products = [
       description: 'Your dog will hate it',
       image:"assets/leash.jpg"
 
-    }
+    },
+    {
+        name: 'Dog Food',
+        price: 35,
+        description: 'Your dog will love it',
+        image:"assets/food.jpg"
+  
+      },
+      {
+        name: 'Foootball',
+        price: 75,
+        description: 'Chewy Ball for your good boy',
+        image:"assets/ball.jpg"
+  
+      },
+      {
+        name: 'Dog Leash',
+        price: 50,
+        description: 'Your dog will hate it',
+        image:"assets/leash.jpg"
+  
+      },
+
    ];

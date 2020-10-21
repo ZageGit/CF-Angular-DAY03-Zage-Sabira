@@ -1,0 +1,6 @@
+.jumbotron{
+    background-image: url(../../assets/jumbo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

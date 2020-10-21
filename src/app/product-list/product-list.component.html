@@ -1,6 +1,7 @@
-<h2>Products</h2>
-
-<div *ngFor="let product of products ; index as productId">
+<h2 class="mt-4">Products</h2>
+<div class="row mt-4">
+<div class="col-4" *ngFor="let product of products ; index as productId">
+    <div class="m-2 border p-4">
 
  <h3>
    <a [routerLink]="['/products', productId]">
@@ -8,7 +9,12 @@
    </a>
  </h3>
  <p *ngIf="product.description">
-   Description: {{ product.description }}
+{{ product.description }}
  </p>
+ <img class="img-fluid"src="{{product.image}}" alt=" {{product.name}} ">
+ <button type="button" class="btn btn-success" [routerLink]="['/products', productId]" >More Info</button>
+</div>
 
+
+</div>
 </div>
