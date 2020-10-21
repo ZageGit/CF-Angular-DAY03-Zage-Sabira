@@ -1,14 +1,15 @@
-<ul class="nav flex-column">
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Active</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-    </li>
-  </ul>
+<h3>Products in Cart:</h3>
+
+<div class="cart-item p-2" *ngFor="let item of items">
+  <div class="card" style="width: 9rem;">
+    <img src=" {{item.image}} " class="card-img-top" alt=" {{item.name}} ">
+    <div class="card-body">
+      <h5 class="card-title"> {{item.name}} </h5>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Price: {{item.price}}</li>
+    </ul>
+  </div>
+</div>
+ 
+

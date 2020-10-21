@@ -1,9 +1,12 @@
-<h2>Product Details</h2>
 
-<div *ngIf="product">
+
+<div class="productcard p-4 mt-4" *ngIf="product">
+<h2>Product Details</h2>
  <h3>{{ product.name }}</h3>
  <h4>{{ product.price | currency }}</h4>
  <p>{{ product.description }}</p>
  <img src=" {{product.image}} " alt=" {{product.name}} ">
+ <div class="text-center mt-2">
+    <button (click)="addToCart(product)" type="button" class="btn btn-secondary">BUY</button>
+ </div>
 </div>
-<button (click)="addToCart(product)">Buy</button>
